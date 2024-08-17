@@ -67,7 +67,7 @@ async def entrypoint(ctx: JobContext):
         ]
     )
 
-    gpt = openai.LLM(model="GPT-4o mini")
+    gpt = openai.LLM(model="GPT-3.5 Turbo")
 
     # Since OpenAI does not support streaming TTS, we'll use it with a StreamAdapter
     # to make it compatible with the VoiceAssistant
